@@ -18,12 +18,12 @@ type ProductInterface interface {
 	GetID() string
 	GetName() string
 	GetStatus() string
-	GetPrince() float64
+	GetPrice() float64
 }
 
 type ProductServiceInterface interface {
 	Get(id string) (ProductInterface, error)
-	Create(id string) (ProductInterface, error)
+	Create(name string, price float64) (ProductInterface, error)
 	Enable(product ProductInterface) (ProductInterface, error)
 	Disable(product ProductInterface) (ProductInterface, error)
 }

@@ -90,18 +90,18 @@ func (mr *MockProductInterfaceMockRecorder) GetName() *gomock.Call {
 	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetName", reflect.TypeOf((*MockProductInterface)(nil).GetName))
 }
 
-// GetPrince mocks base method.
-func (m *MockProductInterface) GetPrince() float64 {
+// GetPrice mocks base method.
+func (m *MockProductInterface) GetPrice() float64 {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "GetPrince")
+	ret := m.ctrl.Call(m, "GetPrice")
 	ret0, _ := ret[0].(float64)
 	return ret0
 }
 
-// GetPrince indicates an expected call of GetPrince.
-func (mr *MockProductInterfaceMockRecorder) GetPrince() *gomock.Call {
+// GetPrice indicates an expected call of GetPrice.
+func (mr *MockProductInterfaceMockRecorder) GetPrice() *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrince", reflect.TypeOf((*MockProductInterface)(nil).GetPrince))
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "GetPrice", reflect.TypeOf((*MockProductInterface)(nil).GetPrice))
 }
 
 // GetStatus mocks base method.
@@ -157,18 +157,18 @@ func (m *MockProductServiceInterface) EXPECT() *MockProductServiceInterfaceMockR
 }
 
 // Create mocks base method.
-func (m *MockProductServiceInterface) Create(id string) (application.ProductInterface, error) {
+func (m *MockProductServiceInterface) Create(name string, price float64) (application.ProductInterface, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "Create", id)
+	ret := m.ctrl.Call(m, "Create", name, price)
 	ret0, _ := ret[0].(application.ProductInterface)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
 // Create indicates an expected call of Create.
-func (mr *MockProductServiceInterfaceMockRecorder) Create(id interface{}) *gomock.Call {
+func (mr *MockProductServiceInterfaceMockRecorder) Create(name, price interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Create", reflect.TypeOf((*MockProductServiceInterface)(nil).Create), id)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "Create", reflect.TypeOf((*MockProductServiceInterface)(nil).Create), name, price)
 }
 
 // Disable mocks base method.
