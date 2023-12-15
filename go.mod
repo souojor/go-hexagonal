@@ -10,5 +10,5 @@ require (
 	github.com/golang/mock v1.6.0
 	github.com/mattn/go-sqlite3 v1.14.18
 	github.com/satori/go.uuid v1.2.0
-	gopkg.in/yaml.v3 v3.0.1 // indirect
+	github.com/spf13/cobra v1.8.0
 )
