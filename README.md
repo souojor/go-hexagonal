@@ -1,6 +1,8 @@
 # go-hexagonal
 Exemplo de arquitetura hexagonal (ports and adapters) na linguagem GO
 
+go install github.com/spf13/cobra-cli@latest
+
 docker-compose up -d
 docker exec -it appproduct bash
 
