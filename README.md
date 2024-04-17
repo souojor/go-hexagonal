@@ -22,3 +22,5 @@ go mod tidy
 
 go run main.go cli -a=create -n=Product CLI -p=25.0
 go run main.go cli -a=get --id=3836f0ee-ec2b-478f-b12d-9654ebadf1f5
+
+go run main.go http
